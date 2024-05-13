@@ -7,6 +7,6 @@ user = "DUNJA123"
 password = "@@Budedobro2"
 role = "ACCOUNTADMIN"
 warehouse = "COMPUTE_WH"
-database = "SNOWFLAKE_SAMPLE_DATA"
-schema = "PETROVDU_DTLB"
+database = "HOL_DB"
+
 
