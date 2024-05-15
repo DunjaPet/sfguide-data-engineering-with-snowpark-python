@@ -6,7 +6,7 @@ account = "nklumiz-mp51299"
 user = "DUNJA123"
 password = "@@Budedobro2"
 role = "ACCOUNTADMIN"
-warehouse = "COMPUTE_WH"
+warehouse = "HOL_WH"
 database = "HOL_DB"
 
 
