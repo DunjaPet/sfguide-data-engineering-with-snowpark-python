@@ -58,9 +58,36 @@ def main(session: Session) -> str:
 # Be aware you may need to type-convert arguments if you add input parameters
 if __name__ == '__main__':
     # Create a local Snowpark session
+    if __name__ == "__main__":
+    # Create a local Snowpark session
+        connection_parameters = {
+     "user": "DUNJA123",
+     "password": "@@Budedobro2",
+     "account": "nklumiz-mp51299",
+     "role": "HOL_ROLE",
+    "warehouse": "HOL_WH",
+    "database" : "HOL_DB"
+ }
+ 
+    with  Session.builder.configs(connection_parameters).create()  as session:
+    #with Session.builder.getOrCreate() as session:
+        import sys
+        if len(sys.argv) > 1:
+            print(main(session, *sys.argv[1:]))  # type: ignore
+        else:
+            print(main(session))  # type: ignore
+
+
+
+
+
+
+
+'''
     with Session.builder.getOrCreate() as session:
         import sys
         if len(sys.argv) > 1:
             print(main(session, *sys.argv[1:]))  # type: ignore
         else:
             print(main(session))  # type: ignore
+'''
